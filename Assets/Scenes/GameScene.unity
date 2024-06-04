@@ -597,8 +597,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1980265012}
   - component: {fileID: 1980265011}
+  - component: {fileID: 1980265013}
   m_Layer: 0
-  m_Name: cannon
+  m_Name: Cannon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -671,6 +672,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1980265013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980265010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00ab482c26e9d41018a48d31931e74aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  candyPrefab: {fileID: 7070242879470833440, guid: f23ae67cd4c0444ad954828ffb436681, type: 3}
+  cannonTransform: {fileID: 1980265012}
+  crosshairPrefab: {fileID: 7553635260553845445, guid: 5770e9a4e87b245d09ba06c8c45cdcf4, type: 3}
+  crosshairLifetime: 0.5
+  candyRotationSpeedMin: 80
+  candyRotationSpeedMax: 150
 --- !u!1 &2003892793
 GameObject:
   m_ObjectHideFlags: 0
