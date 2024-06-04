@@ -22,7 +22,7 @@ public class BurgerGuySpawner : MonoBehaviour
         {
             yield return new WaitForSeconds(Random.Range(_minTime, _maxTime));
             GameObject newBurgerGuy = Instantiate(_burgerGuy);
-            newBurgerGuy.transform.position = new Vector2(3, -3.3f);
+            newBurgerGuy.transform.position = new Vector2(4, -3.3f);
         }
     }
 }
