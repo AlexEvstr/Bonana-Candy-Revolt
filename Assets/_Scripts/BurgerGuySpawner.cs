@@ -11,13 +11,14 @@ public class BurgerGuySpawner : MonoBehaviour
 
     private void Start()
     {
+        BurgersCounter.isFinished = false;
         StartCoroutine(SpawnBurger());
         
     }
 
     private IEnumerator SpawnBurger()
     {
-        while(true)
+        while(!BurgersCounter.isFinished)
         {
             yield return new WaitForSeconds(Random.Range(_minTime, _maxTime));
             GameObject newBurgerGuy = Instantiate(_burgerGuy);
