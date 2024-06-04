@@ -7,15 +7,25 @@ public class CandyShooter : MonoBehaviour
     public Transform cannonTransform;
     public GameObject crosshairPrefab;
     public float crosshairLifetime = 0.5f;
+    public float reloadTime = 1f;
+
+    private bool isReloading = false;
+    private SpriteRenderer cannonRenderer;
+
+    void Start()
+    {
+        cannonRenderer = cannonTransform.GetComponent<SpriteRenderer>();
+    }
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !isReloading)
         {
             Vector3 tapPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             tapPosition.z = 0;
             ShootCandy(tapPosition);
             StartCoroutine(SpawnCrosshair(tapPosition));
+            StartCoroutine(Reload());
         }
     }
 
@@ -52,5 +62,14 @@ public class CandyShooter : MonoBehaviour
         }
 
         Destroy(crosshair);
+    }
+
+    IEnumerator Reload()
+    {
+        isReloading = true;
+        cannonRenderer.color = Color.red;
+        yield return new WaitForSeconds(reloadTime);
+        cannonRenderer.color = Color.white;
+        isReloading = false;
     }
 }
