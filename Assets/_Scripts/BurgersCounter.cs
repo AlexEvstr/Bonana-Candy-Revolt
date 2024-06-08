@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
@@ -11,8 +9,11 @@ public class BurgersCounter : MonoBehaviour
     public static bool isFinished;
     private int _burgersGoal;
 
+    private MoneyController _moneyController;
+
     private void Start()
     {
+        _moneyController = GetComponent<MoneyController>();
         BurgersCount = 0;
         //isFinished = false;
         _burgersGoal = LevelController.CurrentLevel * 10;
@@ -26,6 +27,7 @@ public class BurgersCounter : MonoBehaviour
             isFinished = true;
             _winPanel.SetActive(true);
             LevelController.CurrentLevel++;
+            _moneyController.IncreaseMoney();
             PlayerPrefs.SetInt("currentLevel", LevelController.CurrentLevel);
             GameObject burger = GameObject.FindWithTag("Burger");
             if (burger != null)

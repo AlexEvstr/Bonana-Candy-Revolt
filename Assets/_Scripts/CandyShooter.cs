@@ -6,8 +6,8 @@ public class CandyShooter : MonoBehaviour
     public GameObject candyPrefab;
     public Transform cannonTransform;
     public GameObject crosshairPrefab;
-    public float crosshairLifetime = 0.5f;
-    public float reloadTime = 1f;
+    private float crosshairLifetime = 0.5f;
+    private float reloadTime = 0.5f;
 
     private bool isReloading = false;
     private SpriteRenderer cannonRenderer;
