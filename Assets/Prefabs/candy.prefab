@@ -99,6 +99,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbb01ca299a2c4135916d8546d1a0588, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _sprites:
+  - {fileID: 21300000, guid: 0ff459332a6c2485682a46ee363ed07f, type: 3}
+  - {fileID: 21300000, guid: 1771ec5924d4e48ee88cb8bfc168b7da, type: 3}
+  - {fileID: 21300000, guid: ab2e7046b620445daaed83f87aebb617, type: 3}
+  - {fileID: 21300000, guid: a566e2f15811a4851a2992cbdb2547d6, type: 3}
+  - {fileID: 21300000, guid: f224ed26afcfb4083b245a5cd63c3bd2, type: 3}
+  - {fileID: 21300000, guid: f504d13c34f5d4be5951a2cc11075c40, type: 3}
 --- !u!58 &196317773600723466
 CircleCollider2D:
   m_ObjectHideFlags: 0

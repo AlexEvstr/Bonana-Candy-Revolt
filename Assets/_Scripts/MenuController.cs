@@ -1,12 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
+using TMPro;
 
 public class MenuController : MonoBehaviour
 {
     [SerializeField] private GameObject _menu;
     [SerializeField] private GameObject _levels;
+    [SerializeField] private TMP_Text _MoneyText;
+    public static int CurrentBalance;
+
+    private void Update()
+    {
+        CurrentBalance = PlayerPrefs.GetInt("Balance", 0);
+        _MoneyText.text = $"{CurrentBalance}";
+    }
 
     public void OpenLevels()
     {

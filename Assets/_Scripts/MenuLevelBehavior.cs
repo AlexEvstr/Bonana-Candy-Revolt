@@ -23,7 +23,7 @@ public class MenuLevelBehavior : MonoBehaviour
             return;
         }
 
-        int bestLvl = PlayerPrefs.GetInt("BestLevel", 1);
+        int bestLvl = PlayerPrefs.GetInt("bestLevel", 1);
         if (bestLvl < level)
         {
             _choice.enabled = false;
@@ -41,8 +41,8 @@ public class MenuLevelBehavior : MonoBehaviour
     {
         if (int.TryParse(gameObject.name, out level))
         {
-            PlayerPrefs.SetInt("Level", level);
-            SceneManager.LoadScene("GameplayScene");
+            PlayerPrefs.SetInt("currentLevel", level);
+            SceneManager.LoadScene("GameScene");
         }
     }
 }

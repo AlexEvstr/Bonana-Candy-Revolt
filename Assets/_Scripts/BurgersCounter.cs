@@ -29,6 +29,10 @@ public class BurgersCounter : MonoBehaviour
             LevelController.CurrentLevel++;
             _moneyController.IncreaseMoney();
             PlayerPrefs.SetInt("currentLevel", LevelController.CurrentLevel);
+            if (LevelController.CurrentLevel > PlayerPrefs.GetInt("bestLevel", 1))
+            {
+                PlayerPrefs.SetInt("bestLevel", LevelController.CurrentLevel);
+            }
             GameObject burger = GameObject.FindWithTag("Burger");
             if (burger != null)
             {

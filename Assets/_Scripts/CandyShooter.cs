@@ -19,7 +19,7 @@ public class CandyShooter : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && !isReloading)
+        if (Input.GetMouseButtonDown(0) && !isReloading && !BurgersCounter.isFinished)
         {
             Vector3 tapPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             tapPosition.z = 0;
