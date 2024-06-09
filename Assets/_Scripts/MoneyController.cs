@@ -13,7 +13,6 @@ public class MoneyController : MonoBehaviour
         _currentBalance = PlayerPrefs.GetInt("Balance", 0);
         _balanceText.text = $"{_currentBalance}";
         _moneyToIncrease = LevelController.CurrentLevel * 100;
-        Debug.Log(_moneyToIncrease);
     }
 
     public void IncreaseMoney()
