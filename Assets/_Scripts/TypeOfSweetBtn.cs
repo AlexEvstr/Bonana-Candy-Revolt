@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class TypeOfSweetBtn : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class TypeOfSweetBtn : MonoBehaviour
     [SerializeField] private int _totalCost;
     [SerializeField] private GameObject _cost;
     [SerializeField] private GameObject _choosen;
+    [SerializeField] private Image _coockie;
+    [SerializeField] private TMP_Text _priceText;
 
 
     private void Start()
@@ -65,9 +68,17 @@ public class TypeOfSweetBtn : MonoBehaviour
     private void CheckPrice()
     {
         if (_totalCost > MenuController.CurrentBalance && !_choosen.activeInHierarchy)
+        {
             gameObject.GetComponent<Button>().interactable = false;
+            _coockie.color = Color.grey;
+            _priceText.color = Color.grey;
+        }
         else
+        {
             gameObject.GetComponent<Button>().interactable = true;
+            _coockie.color = Color.white;
+            _priceText.color = new Color(1, 0.4f, 0.9f, 1);
+        }
     }
 
     private void CheckStatus()
