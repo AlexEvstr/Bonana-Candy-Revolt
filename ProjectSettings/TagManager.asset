@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Burger
+  - Manager
   layers:
   - Default
   - TransparentFX

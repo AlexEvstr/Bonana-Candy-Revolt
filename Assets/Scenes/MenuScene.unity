@@ -330,6 +330,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 210112428}
+        m_TargetAssemblyTypeName: MenuVibroAudio, Assembly-CSharp
+        m_MethodName: PlayClickFeedback
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &37823146
 GameObject:
   m_ObjectHideFlags: 0
@@ -1068,6 +1080,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 210112428}
+        m_TargetAssemblyTypeName: MenuVibroAudio, Assembly-CSharp
+        m_MethodName: PlayClickFeedback
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &106298065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1394,6 +1418,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 210112428}
+        m_TargetAssemblyTypeName: MenuVibroAudio, Assembly-CSharp
+        m_MethodName: PlayClickFeedback
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &152801049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1616,6 +1652,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 210112428}
+        m_TargetAssemblyTypeName: MenuVibroAudio, Assembly-CSharp
+        m_MethodName: PlayClickFeedback
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &186164160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1799,6 +1847,7 @@ GameObject:
   - component: {fileID: 210112426}
   - component: {fileID: 210112427}
   - component: {fileID: 210112428}
+  - component: {fileID: 210112429}
   m_Layer: 0
   m_Name: Controller
   m_TagString: Untagged
@@ -1848,12 +1897,108 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f2197bc2c1684ba5940ddea32135503, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clickAudioClip: {fileID: 0}
-  purchaseAudioClip: {fileID: 0}
+  clickAudioClip: {fileID: 8300000, guid: c19e819f27276449d9fb5c2971810e3c, type: 3}
+  purchaseAudioClip: {fileID: 8300000, guid: f7212ca69117b4a9885cd55ff0593d15, type: 3}
   soundEnabledIcon: {fileID: 28083075}
   soundDisabledIcon: {fileID: 1223324639}
   vibrationEnabledIcon: {fileID: 1848035901}
   vibrationDisabledIcon: {fileID: 1604962409}
+--- !u!82 &210112429
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210112425}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 6d5b7ff5db03248e2a0465c1167a3023, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &214475994
 GameObject:
   m_ObjectHideFlags: 0
@@ -1989,6 +2134,7 @@ MonoBehaviour:
   _choosen: {fileID: 1019869430}
   _coockie: {fileID: 930703500}
   _priceText: {fileID: 1978557891}
+  _menuVibroAudio: {fileID: 210112428}
 --- !u!114 &226212634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3012,6 +3158,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 210112428}
+        m_TargetAssemblyTypeName: MenuVibroAudio, Assembly-CSharp
+        m_MethodName: PlayClickFeedback
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &360806000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3249,6 +3407,18 @@ MonoBehaviour:
       - m_Target: {fileID: 210112427}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
         m_MethodName: CloseLevels
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 210112428}
+        m_TargetAssemblyTypeName: MenuVibroAudio, Assembly-CSharp
+        m_MethodName: PlayClickFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3674,6 +3844,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 210112428}
+        m_TargetAssemblyTypeName: MenuVibroAudio, Assembly-CSharp
+        m_MethodName: PlayClickFeedback
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &445483997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3821,6 +4003,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 210112428}
+        m_TargetAssemblyTypeName: MenuVibroAudio, Assembly-CSharp
+        m_MethodName: PlayClickFeedback
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &476907164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3959,6 +4153,18 @@ MonoBehaviour:
       - m_Target: {fileID: 509037883}
         m_TargetAssemblyTypeName: MenuLevelBehavior, Assembly-CSharp
         m_MethodName: LevelPick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 210112428}
+        m_TargetAssemblyTypeName: MenuVibroAudio, Assembly-CSharp
+        m_MethodName: PlayClickFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4765,6 +4971,7 @@ MonoBehaviour:
   _choosen: {fileID: 2099745728}
   _coockie: {fileID: 563950645}
   _priceText: {fileID: 770492094}
+  _menuVibroAudio: {fileID: 210112428}
 --- !u!1 &569607828
 GameObject:
   m_ObjectHideFlags: 0
@@ -5282,6 +5489,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 210112428}
+        m_TargetAssemblyTypeName: MenuVibroAudio, Assembly-CSharp
+        m_MethodName: PlayClickFeedback
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &607658359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5641,6 +5860,18 @@ MonoBehaviour:
       - m_Target: {fileID: 689491328}
         m_TargetAssemblyTypeName: MenuLevelBehavior, Assembly-CSharp
         m_MethodName: LevelPick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 210112428}
+        m_TargetAssemblyTypeName: MenuVibroAudio, Assembly-CSharp
+        m_MethodName: PlayClickFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7290,6 +7521,7 @@ MonoBehaviour:
   _choosen: {fileID: 1686492917}
   _coockie: {fileID: 632950812}
   _priceText: {fileID: 1959610632}
+  _menuVibroAudio: {fileID: 210112428}
 --- !u!114 &959159180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7876,6 +8108,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1030681051}
         m_TargetAssemblyTypeName: MenuLevelBehavior, Assembly-CSharp
         m_MethodName: LevelPick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 210112428}
+        m_TargetAssemblyTypeName: MenuVibroAudio, Assembly-CSharp
+        m_MethodName: PlayClickFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8526,6 +8770,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 210112428}
+        m_TargetAssemblyTypeName: MenuVibroAudio, Assembly-CSharp
+        m_MethodName: PlayClickFeedback
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1148510457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8740,6 +8996,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1169918177}
         m_TargetAssemblyTypeName: MenuLevelBehavior, Assembly-CSharp
         m_MethodName: LevelPick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 210112428}
+        m_TargetAssemblyTypeName: MenuVibroAudio, Assembly-CSharp
+        m_MethodName: PlayClickFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9045,6 +9313,18 @@ MonoBehaviour:
       - m_Target: {fileID: 210112428}
         m_TargetAssemblyTypeName: MenuVibroAudio, Assembly-CSharp
         m_MethodName: EnableSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 210112428}
+        m_TargetAssemblyTypeName: MenuVibroAudio, Assembly-CSharp
+        m_MethodName: PlayClickFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9523,6 +9803,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 210112428}
+        m_TargetAssemblyTypeName: MenuVibroAudio, Assembly-CSharp
+        m_MethodName: PlayClickFeedback
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1340452415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9772,6 +10064,7 @@ MonoBehaviour:
   _choosen: {fileID: 706222036}
   _coockie: {fileID: 2140749841}
   _priceText: {fileID: 1911382280}
+  _menuVibroAudio: {fileID: 210112428}
 --- !u!114 &1352024946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10262,6 +10555,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 210112428}
+        m_TargetAssemblyTypeName: MenuVibroAudio, Assembly-CSharp
+        m_MethodName: PlayClickFeedback
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1393288700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10385,6 +10690,18 @@ MonoBehaviour:
       - m_Target: {fileID: 210112427}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
         m_MethodName: OpenLevels
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 210112428}
+        m_TargetAssemblyTypeName: MenuVibroAudio, Assembly-CSharp
+        m_MethodName: PlayClickFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10667,6 +10984,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1482807074}
         m_TargetAssemblyTypeName: MenuLevelBehavior, Assembly-CSharp
         m_MethodName: LevelPick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 210112428}
+        m_TargetAssemblyTypeName: MenuVibroAudio, Assembly-CSharp
+        m_MethodName: PlayClickFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11058,6 +11387,7 @@ MonoBehaviour:
   _choosen: {fileID: 864968340}
   _coockie: {fileID: 784969772}
   _priceText: {fileID: 1453092033}
+  _menuVibroAudio: {fileID: 210112428}
 --- !u!114 &1581297119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11507,6 +11837,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 210112428}
+        m_TargetAssemblyTypeName: MenuVibroAudio, Assembly-CSharp
+        m_MethodName: PlayClickFeedback
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1596593659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11744,6 +12086,18 @@ MonoBehaviour:
       - m_Target: {fileID: 210112428}
         m_TargetAssemblyTypeName: MenuVibroAudio, Assembly-CSharp
         m_MethodName: EnableVibration
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 210112428}
+        m_TargetAssemblyTypeName: MenuVibroAudio, Assembly-CSharp
+        m_MethodName: PlayClickFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12063,6 +12417,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1647814820}
         m_TargetAssemblyTypeName: MenuLevelBehavior, Assembly-CSharp
         m_MethodName: LevelPick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 210112428}
+        m_TargetAssemblyTypeName: MenuVibroAudio, Assembly-CSharp
+        m_MethodName: PlayClickFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13019,6 +13385,7 @@ MonoBehaviour:
   _choosen: {fileID: 1968167458}
   _coockie: {fileID: 1110873281}
   _priceText: {fileID: 427550622}
+  _menuVibroAudio: {fileID: 210112428}
 --- !u!114 &1817113529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13222,6 +13589,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 210112428}
+        m_TargetAssemblyTypeName: MenuVibroAudio, Assembly-CSharp
+        m_MethodName: PlayClickFeedback
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1833319372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13392,6 +13771,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 210112428}
+        m_TargetAssemblyTypeName: MenuVibroAudio, Assembly-CSharp
+        m_MethodName: PlayClickFeedback
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1886241830
 GameObject:
   m_ObjectHideFlags: 0
@@ -13492,6 +13883,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1886241832}
         m_TargetAssemblyTypeName: MenuLevelBehavior, Assembly-CSharp
         m_MethodName: LevelPick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 210112428}
+        m_TargetAssemblyTypeName: MenuVibroAudio, Assembly-CSharp
+        m_MethodName: PlayClickFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13858,6 +14261,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 210112428}
+        m_TargetAssemblyTypeName: MenuVibroAudio, Assembly-CSharp
+        m_MethodName: PlayClickFeedback
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1914057529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13996,6 +14411,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1918751471}
         m_TargetAssemblyTypeName: MenuLevelBehavior, Assembly-CSharp
         m_MethodName: LevelPick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 210112428}
+        m_TargetAssemblyTypeName: MenuVibroAudio, Assembly-CSharp
+        m_MethodName: PlayClickFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15408,6 +15835,18 @@ MonoBehaviour:
       - m_Target: {fileID: 2136319914}
         m_TargetAssemblyTypeName: MenuLevelBehavior, Assembly-CSharp
         m_MethodName: LevelPick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 210112428}
+        m_TargetAssemblyTypeName: MenuVibroAudio, Assembly-CSharp
+        m_MethodName: PlayClickFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

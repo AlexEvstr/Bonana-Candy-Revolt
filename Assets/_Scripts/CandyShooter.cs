@@ -11,9 +11,11 @@ public class CandyShooter : MonoBehaviour
 
     private bool isReloading = false;
     private SpriteRenderer cannonRenderer;
+    private GameVibroAudio _gameVibroAudio;
 
     void Start()
     {
+        _gameVibroAudio = GetComponent<GameVibroAudio>();
         cannonRenderer = cannonTransform.GetComponent<SpriteRenderer>();
     }
 
@@ -31,6 +33,7 @@ public class CandyShooter : MonoBehaviour
 
     void ShootCandy(Vector3 targetPosition)
     {
+        _gameVibroAudio.PlayShotFeedBack();
         Vector3 direction = targetPosition - cannonTransform.position;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         cannonTransform.rotation = Quaternion.Euler(new Vector3(0, 0, angle + 90));

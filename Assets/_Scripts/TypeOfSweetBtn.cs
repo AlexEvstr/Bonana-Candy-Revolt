@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -12,6 +10,7 @@ public class TypeOfSweetBtn : MonoBehaviour
     [SerializeField] private GameObject _choosen;
     [SerializeField] private Image _coockie;
     [SerializeField] private TMP_Text _priceText;
+    [SerializeField] private MenuVibroAudio _menuVibroAudio;
 
 
     private void Start()
@@ -28,11 +27,11 @@ public class TypeOfSweetBtn : MonoBehaviour
             MenuController.CurrentBalance -= _totalCost;
             PlayerPrefs.SetInt("Balance", MenuController.CurrentBalance);
             SaveBuyStatus();
-            //_menuMusicController.BuySound();
+            _menuVibroAudio.PlayPurchaseFeedback();
         }
         else
         {
-            //_menuMusicController.ClickSound();
+            _menuVibroAudio.PlayClickFeedback();
         }
 
         PlayerPrefs.SetString("Candy", gameObject.name);

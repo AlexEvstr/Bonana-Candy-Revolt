@@ -10,9 +10,11 @@ public class BurgersCounter : MonoBehaviour
     private int _burgersGoal;
 
     private MoneyController _moneyController;
+    private GameVibroAudio _gameVibroAudio;
 
     private void Start()
     {
+        _gameVibroAudio = GetComponent<GameVibroAudio>();
         _moneyController = GetComponent<MoneyController>();
         BurgersCount = 0;
         //isFinished = false;
@@ -24,6 +26,7 @@ public class BurgersCounter : MonoBehaviour
         _currentBurgersText.text = $"{BurgersCount}/{_burgersGoal}";
         if (BurgersCount == _burgersGoal && !isFinished)
         {
+            _gameVibroAudio.PlayWinFeedBack();
             isFinished = true;
             _winPanel.SetActive(true);
             LevelController.CurrentLevel++;
