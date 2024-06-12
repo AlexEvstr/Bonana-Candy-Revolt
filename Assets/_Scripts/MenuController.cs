@@ -8,6 +8,11 @@ public class MenuController : MonoBehaviour
     [SerializeField] private TMP_Text _MoneyText;
     public static int CurrentBalance;
 
+    private void Start()
+    {
+        Time.timeScale = 1;
+    }
+
     private void Update()
     {
         CurrentBalance = PlayerPrefs.GetInt("Balance", 0);

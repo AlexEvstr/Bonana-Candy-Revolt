@@ -11,6 +11,7 @@ public class BurgersCounter : MonoBehaviour
 
     private MoneyController _moneyController;
     private GameVibroAudio _gameVibroAudio;
+    [SerializeField] private GameObject _pauseBtn;
 
     private void Start()
     {
@@ -26,6 +27,7 @@ public class BurgersCounter : MonoBehaviour
         _currentBurgersText.text = $"{BurgersCount}/{_burgersGoal}";
         if (BurgersCount == _burgersGoal && !isFinished)
         {
+            _pauseBtn.SetActive(false);
             _gameVibroAudio.PlayWinFeedBack();
             isFinished = true;
             _winPanel.SetActive(true);
